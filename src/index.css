@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    overflow-x: hidden;
+}
+
+li {
+    padding: 16px 0;
+}
+
+li:hover {
+    background: white;
+    color: #013365;
+    border-style: double;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+button {
+    padding: 20px 20px;
+    border-radius: 15px;
+    background: #013365;
+    border: none;
+    cursor: pointer;
+}
+
+#button {
+    padding: 5px 10px;
+    border-radius: 15px;
+    background: #013365;
+    border: none;
+    cursor: pointer;
+}
+
+#button1 {
+    padding: 0;
+    border: none;
+    background: none;
+}
+#button2{
+    background: #013365;
+    padding: 8px 8px;
+    color: white;
+
+}
+.button1 {
+    padding: 10px 10px;
+    border-radius: 15px;
+    background: #013365;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+}
+
+table tr td {
+    padding: 6px 0;
+
+}
+.navbar{
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.sidebox {
+    padding: 2rem 4%;
+}
+
+.canvas-container {
+    background-color: #f3f4f6;
+    /* Light shade */
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.bg{
+    background: linear-gradient(to bottom right, rgb(255, 228, 230) 0%, transparent 12%),
+            linear-gradient(to bottom right, rgb(240, 171, 252) 0%, transparent 60%),
+            linear-gradient(to bottom right, rgb(16, 185, 129) 0%, transparent 52%),
+            linear-gradient(to bottom right, rgb(165, 243, 252) 0%, transparent 11%),
+            linear-gradient(to bottom right, rgb(204, 251, 241) 0%, transparent 8%),
+            linear-gradient(to bottom right, rgb(255, 237, 213) 0%, transparent 36%);
+        background-color: rgb(245, 245, 245);
+}
+
+.loader {
+    margin-left: 3rem;
+    width: 2.5em;
+    height: 2.5em;
+    transform: rotate(165deg);
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 0.25em;
+    transform: translate(-50%, -50%);
+}
+
+.loader:before {
+    animation: before8 2s infinite;
+}
+
+.loader:after {
+    animation: after6 2s infinite;
+}
+
+@keyframes before8 {
+    0% {
+        width: 0.5em;
+        box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+
+    35% {
+        width: 2.5em;
+        box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75), 0 0.5em rgba(111, 202, 220, 0.75);
+    }
+
+    70% {
+        width: 0.5em;
+        box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75), 1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+
+    100% {
+        box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+}
+
+@keyframes after6 {
+    0% {
+        height: 0.5em;
+        box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+    }
+
+    35% {
+        height: 2.5em;
+        box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75), -0.5em 0 rgba(233, 169, 32, 0.75);
+    }
+
+    70% {
+        height: 0.5em;
+        box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75), -0.5em 1em rgba(233, 169, 32, 0.75);
+    }
+
+    100% {
+        box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+    }
+}
+
+.loader {
+    position: absolute;
+    top: calc(50% - 1.25em);
+    left: calc(50% - 1.25em);
+}
