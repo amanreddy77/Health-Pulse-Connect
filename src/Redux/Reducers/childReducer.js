@@ -7,7 +7,7 @@ const initialState = {
     loading: false,
     error: null,
 };
-
+// fetching
 const childReducer = (state = initialState, action) => {
     switch (action.type) {
         case FETCH_CHILDREN_REQUEST:
